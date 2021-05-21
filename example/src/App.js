@@ -1,10 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'react-popup-tis'
-import 'react-popup-tis/dist/index.css'
+import { Popup } from 'react-popup-tis';
+import 'react-popup-tis/dist/index.css';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return (
+    <div className='App'>
+      <div className='Title'>
+        ButtonGroup Tis
+      </div>
+      <Popup
+        className='Popup'
+        msg='Visit GitHub'
+        darkMode={false}
+      >
+        <a href='http://github.com/'>
+          GitHub
+        </a>
+      </Popup>
+    </div>
+  );
+};
 
-export default App
+export default App;
