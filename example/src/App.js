@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className='App'>
       <div className='Title'>
-        ButtonGroup Tis
+        Popup Tis
       </div>
       <Popup
         className='Popup'
