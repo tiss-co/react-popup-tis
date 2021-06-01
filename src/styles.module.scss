@@ -4,7 +4,7 @@ $bg-box-dark: #242526;
 $bg-popup-light: #3c3c3cd9;
 $bg-popup-dark: #e6e7ebb3;
 
-.PopupDiv {
+.PopupDiv_PopupTis {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -15,7 +15,7 @@ $bg-popup-dark: #e6e7ebb3;
   height: fit-content;
 }
 
-.Popup {
+.Popup_PopupTis {
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -38,12 +38,12 @@ $bg-popup-dark: #e6e7ebb3;
     margin-right: 10px;
   }
 
-  &.Dark {
+  &.Dark_PopupTis {
     color: $bg-box-dark;
     background-color: $bg-popup-dark;
   }
 }
 
-.Close {
+.Close_PopupTis {
   display: none;
 }

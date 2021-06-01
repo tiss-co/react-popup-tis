@@ -7,7 +7,7 @@ export const Popup = ({ msg = '', className, children, icon, darkMode = false })
   const [openPopup, setOpenPopup] = useState(false);
 
   return (
-    <div className={css.PopupDiv} >
+    <div className={css.PopupDiv_PopupTis} >
       <div
         onMouseOver={() => setOpenPopup(true)}
         onMouseLeave={() => setOpenPopup(false)}
@@ -15,9 +15,9 @@ export const Popup = ({ msg = '', className, children, icon, darkMode = false })
         {children}
       </div>
       <div
-        className={classNames(css.Popup, className, {
-          [css.Close]: !openPopup,
-          [css.Dark]: darkMode,
+        className={classNames(css.Popup_PopupTis, className, {
+          [css.Close_PopupTis]: !openPopup,
+          [css.Dark_PopupTis]: darkMode,
         })}
       >
         {icon}
