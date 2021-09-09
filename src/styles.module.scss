@@ -15,6 +15,10 @@ $bg-popup-dark: #e6e7ebb3;
   height: fit-content;
 }
 
+.Children_PopupTis * {
+  z-index: 1 !important;
+}
+
 .Popup_PopupTis {
   display: flex;
   flex-flow: row;
@@ -31,6 +35,7 @@ $bg-popup-dark: #e6e7ebb3;
   font-size: var(--font-size-small);
   color: $bg-box-light;
   white-space: nowrap;
+  z-index: 10 !important;
 
   > svg {
     width: 20px;
@@ -41,6 +46,11 @@ $bg-popup-dark: #e6e7ebb3;
   &.Dark_PopupTis {
     color: $bg-box-dark;
     background-color: $bg-popup-dark;
+  }
+
+  &.Top_PopupTis {
+    top: unset !important;
+    bottom: 110% !important;
   }
 }
 
