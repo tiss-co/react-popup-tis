@@ -9,12 +9,13 @@ export const Popup = ({
   children,
   icon,
   darkMode = false,
-  top = false
+  top = false,
+  id
 }) => {
   const [openPopup, setOpenPopup] = useState(false);
 
   return (
-    <div className={css.PopupDiv_PopupTis} >
+    <div className={css.PopupDiv_PopupTis} id={id}>
       <div
         className={css.Children_PopupTis}
         onMouseOver={() => setOpenPopup(true)}
@@ -41,5 +42,6 @@ Popup.propTypes = {
   msg: PropTypes.string,
   icon: PropTypes.any,
   darkMode: PropTypes.bool,
-  top: PropTypes.bool
+  top: PropTypes.bool,
+  id: PropTypes.string,
 };
